@@ -1,0 +1,137 @@
+:root {
+  --bg: #0b2340;
+  --bg-alt: #0f2d52;
+  --panel: #123563;
+  --text: #f4ecd8;
+  --muted: #b9c6da;
+  --accent: #f2c14e;
+  --border: #274b7d;
+  --max-width: 780px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-alt);
+}
+
+header img {
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+header .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--accent);
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero img.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 0 0 8px;
+}
+
+.hero p.tagline {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.promo {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  margin: 32px 0;
+  display: block;
+}
+
+section {
+  margin-bottom: 36px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+a {
+  color: var(--accent);
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+footer a {
+  color: var(--muted);
+  margin: 0 8px;
+}
+
+ul {
+  padding-left: 20px;
+}
