@@ -24,10 +24,8 @@ App Store Connect.
 
 ## app-ads.txt (AdMob)
 
-`app-ads.txt` lists the ad networks allowed to sell ads in the app. Replace
-`pub-0000000000000000` with your AdMob publisher ID (AdMob → **Settings →
-Account information**, or **Apps → View all apps → app-ads.txt → How to set
-up app-ads.txt**, which shows the exact line to copy).
+`app-ads.txt` lists the ad networks allowed to sell ads in the app. It contains
+the AdMob publisher ID `pub-9446375016689596`.
 
 AdMob only looks for the file at the **root of the domain** of the developer
 website on your App Store listing, e.g. `https://bradcarobus.github.io/app-ads.txt`.
