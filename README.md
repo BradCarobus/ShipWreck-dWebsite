@@ -7,6 +7,7 @@ Website required for Apple App Store submission for **Ship Wreck'd**.
 - `index.html` — landing page
 - `support.html` — support/contact info (required by App Store Connect)
 - `privacy.html` — privacy policy (required by App Store Connect)
+- `app-ads.txt` — authorized ad sellers file for AdMob
 
 ## Hosting
 
@@ -20,3 +21,17 @@ This is a static site with no build step. To host it for free with GitHub Pages:
 Use that URL (and `.../support.html` / `.../privacy.html`) for the
 **Marketing URL**, **Support URL**, and **Privacy Policy URL** fields in
 App Store Connect.
+
+## app-ads.txt (AdMob)
+
+`app-ads.txt` lists the ad networks allowed to sell ads in the app. Replace
+`pub-0000000000000000` with your AdMob publisher ID (AdMob → **Settings →
+Account information**, or **Apps → View all apps → app-ads.txt → How to set
+up app-ads.txt**, which shows the exact line to copy).
+
+AdMob only looks for the file at the **root of the domain** of the developer
+website on your App Store listing, e.g. `https://bradcarobus.github.io/app-ads.txt`.
+A GitHub Pages *project* site lives under `/ShipWreck-dWebsite/`, so the file
+there will not be found. Either serve the site from a user site repo named
+`bradcarobus.github.io`, or point a custom domain at this repo, so that
+`app-ads.txt` ends up at the domain root.
