@@ -28,8 +28,7 @@ App Store Connect.
 the AdMob publisher ID `pub-9446375016689596`.
 
 AdMob only looks for the file at the **root of the domain** of the developer
-website on your App Store listing, e.g. `https://bradcarobus.github.io/app-ads.txt`.
-A GitHub Pages *project* site lives under `/ShipWreck-dWebsite/`, so the file
-there will not be found. Either serve the site from a user site repo named
-`bradcarobus.github.io`, or point a custom domain at this repo, so that
-`app-ads.txt` ends up at the domain root.
+website on your App Store listing. The site is deployed on Vercel at
+`https://ship-wreckd-game.vercel.app/`, which serves this repo's root at the
+domain root, so the file is live at
+`https://ship-wreckd-game.vercel.app/app-ads.txt` once deployed to production.
